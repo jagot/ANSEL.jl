@@ -1,0 +1,14 @@
+#+TITLE: ANSEL.jl
+#+AUTHOR: Stefanos Carlström
+#+EMAIL: stefanos.carlstrom@gmail.com
+
+A small library for converting from [[https://en.wikipedia.org/wiki/ANSEL][ANSEL]]/[[https://en.wikipedia.org/wiki/GEDCOM][GEDCOM]] encoded strings to
+Unicode.
+
+#+BEGIN_SRC julia :exports both
+  using ANSEL
+  gedcom2unicode([0xea, 0x61, 0xe8, 0x61, 0xe8, 0x6f])
+#+END_SRC
+
+#+RESULTS:
+: "åäö"
